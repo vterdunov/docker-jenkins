@@ -1,0 +1,11 @@
+ace-editor
+docker-workflow
+git
+github
+groovy
+junit
+swarm
+matrix-auth
+yet-another-docker-plugin
+windows-slaves
+workflow-aggregator
