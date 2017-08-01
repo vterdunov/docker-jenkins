@@ -1,4 +1,4 @@
-FROM jenkinsci/jenkins:2.60.1-alpine
+FROM jenkinsci/jenkins:2.60.2-alpine
 
 ENV JAVA_OPTS="-Xmx4096m"
 ENV JENKINS_SLAVE_AGENT_PORT=50000
