@@ -6,6 +6,7 @@ git
 github
 groovy
 junit
+role-strategy
 swarm
 matrix-auth
 windows-slaves
