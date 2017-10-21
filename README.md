@@ -1,2 +1,1 @@
-# docker-jenkins
-Jenkins in Docker
+# Jenkins CI in Docker
