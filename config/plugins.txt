@@ -1,4 +1,6 @@
 ace-editor
+blueocean
+docker-traceability
 docker-workflow
 git
 github
@@ -6,6 +8,5 @@ groovy
 junit
 swarm
 matrix-auth
-yet-another-docker-plugin
 windows-slaves
 workflow-aggregator
