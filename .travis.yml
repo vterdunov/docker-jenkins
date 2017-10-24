@@ -1,0 +1,21 @@
+sudo: required
+
+language: go
+
+services:
+  - docker
+
+env:
+  global:
+    - COMMIT=${TRAVIS_COMMIT::7}
+
+script:
+  - docker build -t vterdunov/jenkins-in-docker:${COMMIT} .
+
+after_success:
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+      docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD";
+      docker tag vterdunov/jenkins-in-docker:${COMMIT} vterdunov/jenkins-in-docker:latest;
+      docker push vterdunov/jenkins-in-docker:${COMMIT};
+      docker push vterdunov/jenkins-in-docker:latest;
+    fi
