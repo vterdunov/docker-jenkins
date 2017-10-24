@@ -6,6 +6,7 @@ git
 github
 groovy
 junit
+ldap
 role-strategy
 swarm
 matrix-auth
